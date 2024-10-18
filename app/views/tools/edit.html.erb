@@ -1,0 +1,9 @@
+<%= form_with(model: @tool, url: tool_path) do |form| %>
+    <!-- Edit the Tool -->
+    <input type="submit" value="Export to LMS" form="deep_link_reponse_form">
+    <%= form.submit "Save" %>
+<% end %>
+  
+<%= turbo_frame_tag dom_id(@tool, "export") do %>
+    <%= render @response_form %>
+<% end %>
