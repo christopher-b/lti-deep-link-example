@@ -21,7 +21,6 @@ class ToolController < ApplicationController
         end
     end
 
-
     private
 
     def set_tool
